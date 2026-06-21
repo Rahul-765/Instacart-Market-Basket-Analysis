@@ -1,7 +1,7 @@
 # Instacart Market Basket Analysis
 The Dataset is an open-source dataset provided by [Instacart]( https://www.instacart.com/store/?categoryFilter=homeTabForYou), which covers grocery orders, products, products purchase in each order and there departments and aisles also, the data contains of orders week and hour of day the orders placed by the Instacart user [Source Data]
 
-## Data Preparation & Exploratory Data Analysis: [Notebook]( https://github.com/Rahul-765/demo-2/blob/main/Notebook%202%20(1).ipynb)
+## Data Preparation & Exploratory Data Analysis: [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/01_data_preparation_and_eda.ipynb)
 
 This notebook performs data preparation and exploratory data analysis (EDA), including table consolidation, column standardization, data validation and summary analysis of orders, users and products.
 
@@ -36,5 +36,4 @@ This notebook performs data preparation and exploratory data analysis (EDA), inc
 
 ### Data Modelling: (now I want to write all the kpis and the data transformation link and then image of data model)
 
-## Customer Behaviour Analysis [Notebook]()
-Filename; 01_Customer_Behaviour.ipynb
+## Customer Behaviour Analysis [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/02_Customer_Behaviour.ipynb)
