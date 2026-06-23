@@ -37,3 +37,18 @@ This notebook performs data preparation and exploratory data analysis (EDA), inc
 ### Data Modelling: (now I want to write all the kpis and the data transformation link and then image of data model)
 
 ## Customer Behaviour Analysis [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/02_Customer_Behaviour.ipynb)
+
+| Finding | Number |
+|---------|--------|
+| Total customers analysed | **206,209** |
+| Total orders analysed | **3,421,083** |
+| Most common order frequency | **4–8 orders per customer lifetime** |
+| Largest shopping frequency segment | **Monthly shoppers: 52.3% (107,897 customers)** |
+| Peak shopping window | **Sunday 10am–3pm** |
+| Largest lifespan bucket | **180–365 days: 41.1% of customers** |
+| Customers active beyond 1 year | **<1% (1,568 customers)** |
+
+> The median Instacart customer is active for 6–12 months, shops monthly,
+> and places 4–8 orders before disengaging. **Early-journey conversion (orders 1→6)
+> is the single highest-leverage loyalty intervention.**
+
