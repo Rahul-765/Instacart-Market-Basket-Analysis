@@ -51,10 +51,6 @@ This notebook performs data preparation and exploratory data analysis (EDA), inc
 
 
 > The typical Instacart customer remains active for **6–12 months**, shops **approximately once every 2–4 weeks**, and places **4–8 orders during their lifetime**. Shopping activity is occurring during the **6–9 PM evening window**, followed by 12–5 PM afternoons.
-> More than half of customers (52.3%) are monthly shoppers, while only 11.3% exhibit weekly purchasing behavior. Since most > customers place relatively few orders before disengaging, the first six orders represent the most critical stage of the > > customer lifecycle, making early-journey retention and conversion initiatives the highest-leverage opportunity for > improving long-term loyalty and customer value.
 
-
-> The median Instacart customer is active for 6–12 months, shops monthly,
-> and places 4–8 orders before disengaging. **Early-journey conversion (orders 1→6)
-> is the single highest-leverage loyalty intervention.**
+> More than half of customers (52.3%) are monthly shoppers, while only 11.3% exhibit weekly purchasing behavior. Since most  customers place relatively few orders before disengaging, the first six orders represent the most critical stage of the  customer lifecycle, making early-journey retention and conversion initiatives the highest-leverage opportunity for improving long-term loyalty and customer value.
 
