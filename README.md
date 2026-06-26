@@ -1,62 +1,6 @@
-# Instacart Market Basket Analysis
-The Dataset is an open-source dataset provided by [Instacart]( https://www.instacart.com/store/?categoryFilter=homeTabForYou), which covers grocery orders, products, products purchase in each order and there departments and aisles also, the data contains of orders week and hour of day the orders placed by the Instacart user [Source Data]
-
-## Data Preparation & Exploratory Data Analysis: [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/01_data_preparation_and_eda.ipynb)
-
-This notebook performs data preparation and exploratory data analysis (EDA), including table consolidation, column standardization, data validation and summary analysis of orders, users and products.
-
-#### Orders: (3.4 million orders placed by 206k customers)
--	order_id: unique identifier for each order
--	user_id: unique identifier for the customer
--	eval_set: which evaluation set this order belongs in
--	order_number: order sequence number for user (1st to nth)
--	order_dow: day of the week the order was placed on
--	order_hour_of_day: hour of the day order placed on
--	day_since_prior_order: days since previous order (where null for first order) 
-
-#### Orders_products: (33.8 million rows)
--	order_id: foreign key
--	product_id: foreign key
--	add_to_cart_order: Sequence in which the product was added to the cart
--	reordered: product has been ordered by this user in the past or not (1= yes or 0 = no)
-
-#### Products (49.6K products)
--	product_id: unique identifier for each product
--	product_name: name of the product 
--	aisle_id: foreign key
--	department_id: foreign key
-
-#### Ailse (134 Ailse)
--	aisle id: unique identifier for each ailse
--	aisle: name of the aisle
-
-#### Department (21 departments)
--	department_id: unique identifier for each department
--	department: name of the department 
-
-### Data Modelling: (now I want to write all the kpis and the data transformation link and then image of data model)
-
-## Customer Behaviour Analysis [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/02_Customer_Behaviour.ipynb)
-
-| Finding | Number |
-|---------|--------|
-| Total customers analysed | **206,209** |
-| Total orders analysed | **3,421,083** |
-| Most common order frequency | **4–8 orders per customer lifetime** |
-| Largest shopping frequency segment | **Monthly shoppers: 52.3% (107,897 customers)** |
-| Peak shopping day | **Sunday, followed by Monday** |
-| Peak shopping time | **6–9 PM, followed by 12–5 PM** |
-| Largest lifespan bucket | **180–365 days: 41.1% of customers** |
-| Customers active beyond 1 year | **<1% (1,568 customers)** |
-
-
-> The typical Instacart customer remains active for **6–12 months**, shops **approximately once every 2–4 weeks**, and places **4–8 orders during their lifetime**. Shopping activity is occurring during the **6–9 PM evening window**, followed by 12–5 PM afternoons.
-
-> More than half of customers (52.3%) are monthly shoppers, while only 11.3% exhibit weekly purchasing behavior. Since most  customers place relatively few orders before disengaging, the first six orders represent the most critical stage of the  customer lifecycle, making early-journey retention and conversion initiatives the highest-leverage opportunity for improving long-term loyalty and customer value.
-
 #  Instacart Market Basket Analysis
 
-This project analyse customer purchasing behaviour using the **Instacart Grocery Shopping Dataset**, an open-source dataset released by [Instacart](https://www.instacart.com/store/?categoryFilter=homeTabForYou), one of the largest online grocery delivery and pickup platforms in the United States.
+This project analyse customer purchasing behaviour using the **Instacart Grocery Shopping Dataset**, an open-source dataset released by **[Instacart](https://www.instacart.com/store/?categoryFilter=homeTabForYou)**, one of the largest online grocery delivery and pickup platforms in the United States.
 
 The dataset contains grocery orders, purchased products, aisles and departments. It includes customer order history, product level transactions, shopping day, shopping hour, order sequence and reorder information, making it ideal for customer behaviour analysis and market basket analysis
 
@@ -127,9 +71,9 @@ This notebook analyse shopping basket and product purchasing patterns to underst
 | Top department by volume | **Produce** — highest order count and highest reorder rate |
 | Top purchased product | **Banana** — most ordered product across all order stages |
 
-> Basket size is remarkably stable at approximately **10 items per order** regardless of how many lifetime orders a customer has placed. 
-> The 20 most purchased products are dominated entirely by fresh and organic produce. **Banana** ranks first. The first non-produce product in the ranking is Organic Whole Milk at position 10 with 142,813 purchases. Fresh fruits and vegetables account for the overwhelming majority of the top 20 by purchase volume.
-> Products most frequently added to the cart first represent the strongest purchase intent, indicating the items customers visit the platform specifically to buy. When these products also have high reorder rates, they become key drivers of long-term customer loyalty.
+> Basket size is remarkably stable at approximately **10 items per order** regardless of how many lifetime orders a customer has placed. \
+> The 20 most purchased products are dominated entirely by fresh and organic produce. **Banana** ranks first. The first non-produce product in the ranking is Organic Whole Milk at position 10 with 142,813 purchases. Fresh fruits and vegetables account for the overwhelming majority of the top 20 by purchase volume. \
+> Products most frequently added to the cart first represent the strongest purchase intent, indicating the items customers visit the platform specifically to buy. When these products also have high reorder rates, they become key drivers of long-term customer loyalty. \
 > Overall, the analysis suggests that **fresh produce is at the core of the shopping experience**. Maintaining product availability, quality, and competitive pricing in this category is likely to have a greater impact on customer retention than promotional discounts in less frequently purchased departments.
 
 ## Reorder Analysis [Notebook](https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/04_Reorder_Analysis.ipynb)
@@ -148,5 +92,5 @@ This notebook investigates repeat purchasing behaviour to understand customer lo
 | Fastest loyalty department | **Produce** — 61.7% reorder at orders 2–10, rising to 90.3% at orders 70+ |
 | Slowest loyalty department | **Personal care** — 27.6% reorder at orders 2–10 |
 
-> **59.01% of all items sold are reorders**, meaning the majority of Instacart purchasing is habitual rather than exploratory. The transition from orders 1–10 (42.4%) to orders 11–20 (69.2%) represents the largest shift in reorder behaviour across the entire customer journey and marks the primary habit formation window.
+> **59.01% of all items sold are reorders**, meaning the majority of Instacart purchasing is habitual rather than exploratory. The transition from orders 1–10 (42.4%) to orders 11–20 (69.2%) represents the largest shift in reorder behaviour across the entire customer journey and marks the primary habit formation window. \
 > The reorder analysis confirms that **time and order frequency are the primary drivers of loyalty** - every department converges toward higher reorder rates given enough interactions. The most actionable insight is the concentration of 1,642,411 orders in the 1–10 range: the majority of the customer base is still in the habit-formation window, and this is where loyalty programme investment has the highest expected return.
