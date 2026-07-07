@@ -39,7 +39,7 @@ This notebook prepares the Instacart dataset for analysis by consolidating the o
 -	department_id: unique identifier for each department
 -	department: name of the department 
 
-### Data Modelling: (image of data model)
+### Data Modelling:
 <p align="center">
   <img src="assets/erd-diagram.png" width="600">
 </p>
