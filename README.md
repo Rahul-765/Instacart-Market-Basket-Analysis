@@ -40,6 +40,9 @@ This notebook prepares the Instacart dataset for analysis by consolidating the o
 -	department: name of the department 
 
 ### Data Modelling: (image of data model)
+<p align="center">
+  <img src="assets/erd-diagram.png" width="600">
+</p>
 
 ## Customer Behaviour Analysis [Notebook]( https://github.com/Rahul-765/Instacart-Market-Basket-Analysis/blob/main/02_Customer_Behaviour.ipynb)
 
